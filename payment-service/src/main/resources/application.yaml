@@ -1,0 +1,17 @@
+server:
+  port: 9091
+
+spring:
+  application:
+    name: payment-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/payments?createDatabaseIfNotExist=true
+    username: root
+    password: 4724
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+
+stripe:
+  key: ${STRIPE_SECRET_KEY}
