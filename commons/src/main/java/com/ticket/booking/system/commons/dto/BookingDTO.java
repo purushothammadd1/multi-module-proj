@@ -1,6 +1,6 @@
 package com.ticket.booking.system.commons.dto;
 
-import com.movie.booking.system.enums.BookingStatus;
+import com.movie.booking.system.entity.BookingStatus;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;

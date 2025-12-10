@@ -1,6 +1,5 @@
 package com.movie.booking.system.entity;
 
-import com.movie.booking.system.enums.BookingStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,7 +11,9 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
 import java.util.UUID;
-@Data@AllArgsConstructor@NoArgsConstructor
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Builder
 @Table(name = "bookings")

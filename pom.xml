@@ -23,19 +23,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>commons</module>
         <module>booking-service</module>
         <module>payment-service</module>
     </modules>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
-            <optional>true</optional>
-        </dependency>
-    </dependencies>
 
 
     <dependencyManagement>

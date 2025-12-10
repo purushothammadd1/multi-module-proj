@@ -1,4 +1,4 @@
-package com.movie.booking.system.enums;
+package com.movie.booking.system.entity;
 
 public enum BookingStatus {
     PENDING,

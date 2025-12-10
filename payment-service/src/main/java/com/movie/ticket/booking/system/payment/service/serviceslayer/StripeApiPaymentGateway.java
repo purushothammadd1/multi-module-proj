@@ -1,8 +1,10 @@
 package com.movie.ticket.booking.system.payment.service.serviceslayer;
 
+import com.movie.booking.system.entity.BookingStatus;
 import com.stripe.Stripe;
 import com.stripe.exception.StripeException;
 import com.stripe.model.Charge;
+import com.ticket.booking.system.commons.dto.BookingDTO;
 import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -32,7 +34,7 @@ public class StripeApiPaymentGateway {
         try {
             Charge.create (chargeParams); // create online payment
             log.info("payment was successful for the booking Id {} ",bookingDTO.getBookingId ());
-            bookingDTO.setBookingStatus (BookingStatus.CONFIRMED);
+            bookingDTO.setBookingStatus ( BookingStatus.CONFIRMED);
         } catch (StripeException e) {
             log.error ("Error Encountered during payment process: "+ e.getMessage ());
             bookingDTO.setBookingStatus (BookingStatus.CANCELLED);

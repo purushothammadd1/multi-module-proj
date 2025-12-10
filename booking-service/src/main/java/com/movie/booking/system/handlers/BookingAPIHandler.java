@@ -1,6 +1,6 @@
 package com.movie.booking.system.handlers;
 
-import com.movie.booking.system.dto.ResponseDTO;
+import com.ticket.booking.system.commons.dto.ResponseDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

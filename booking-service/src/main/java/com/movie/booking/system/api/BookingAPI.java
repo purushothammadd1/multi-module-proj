@@ -1,6 +1,5 @@
 package com.movie.booking.system.api;
 
-
 import com.movie.booking.system.services.BookingService;
 import com.ticket.booking.system.commons.dto.BookingDTO;
 import jakarta.validation.Valid;
