@@ -1,4 +1,4 @@
-package com.movie.booking.system.entity;
+package com.ticket.booking.system.commons.dto;
 
 public enum BookingStatus {
     PENDING,

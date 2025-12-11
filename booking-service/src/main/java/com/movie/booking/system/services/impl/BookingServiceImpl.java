@@ -2,10 +2,10 @@ package com.movie.booking.system.services.impl;
 
 import com.movie.booking.system.brokers.PaymentServiceBroker;
 import com.movie.booking.system.entity.BookingEntity;
-import com.movie.booking.system.entity.BookingStatus;
 import com.movie.booking.system.repositories.BookingRepository;
 import com.movie.booking.system.services.BookingService;
 import com.ticket.booking.system.commons.dto.BookingDTO;
+import com.ticket.booking.system.commons.dto.BookingStatus;
 import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

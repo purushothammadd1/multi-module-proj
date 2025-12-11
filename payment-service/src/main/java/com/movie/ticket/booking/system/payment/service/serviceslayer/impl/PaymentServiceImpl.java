@@ -1,6 +1,5 @@
 package com.movie.ticket.booking.system.payment.service.serviceslayer.impl;
 
-import com.movie.booking.system.entity.BookingStatus;
 import com.movie.ticket.booking.system.payment.service.entity.PaymentEntity;
 import com.movie.ticket.booking.system.payment.service.entity.PaymentStatus;
 import com.movie.ticket.booking.system.payment.service.repositories.PaymentRepository;
@@ -8,6 +7,7 @@ import com.movie.ticket.booking.system.payment.service.serviceslayer.PaymentServ
 import com.movie.ticket.booking.system.payment.service.serviceslayer.StripeApiPaymentGateway;
 import com.stripe.exception.StripeException;
 import com.ticket.booking.system.commons.dto.BookingDTO;
+import com.ticket.booking.system.commons.dto.BookingStatus;
 import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
