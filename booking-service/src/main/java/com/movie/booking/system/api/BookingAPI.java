@@ -18,16 +18,17 @@ public class BookingAPI {
     @Autowired
     private BookingService bookingService;
 
-   /* @PostMapping
-    public ResponseEntity<ResponseDTO> createBooking(@Valid @RequestBody BookingDTO bookingDTO){
-        log.info("Entered into Booking API with JSON request: "+bookingDTO);
-        ResponseDTO responseDTO = this.bookingService.createBooking(bookingDTO);
-        return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.CREATED);
 
-    }*/
     @PostMapping
     public BookingDTO createBooking(@Valid @RequestBody BookingDTO bookingDTO){
         log.info("Entered into BookingAPI with request {} ", bookingDTO.toString());
         return this.bookingService.createBooking (bookingDTO);
     }
 }
+/* @PostMapping
+    public ResponseEntity<ResponseDTO> createBooking(@Valid @RequestBody BookingDTO bookingDTO){
+        log.info("Entered into Booking API with JSON request: "+bookingDTO);
+        ResponseDTO responseDTO = this.bookingService.createBooking(bookingDTO);
+        return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.CREATED);
+
+    }*/

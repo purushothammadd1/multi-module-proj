@@ -39,7 +39,7 @@
             </dependency>
 
             <dependency>
-                <groupId>com.ticket.booking.system.commons</groupId>
+                <groupId>com.ticket.booking.system</groupId>
                 <artifactId>commons</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>

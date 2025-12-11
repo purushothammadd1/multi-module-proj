@@ -5,21 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e522d0e-80ed-449c-92f9-146aa5aefa2e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/commons/src/main/java/com/ticket/booking/system/commons/dto/BookingStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons/src/main/java/com/ticket/booking/system/commons/handlers/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/booking-service/src/main/java/com/movie/booking/system/api/BookingAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/movie/booking/system/api/BookingAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking-service/src/main/java/com/movie/booking/system/entity/BookingEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/movie/booking/system/entity/BookingEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking-service/src/main/java/com/movie/booking/system/entity/BookingStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking-service/src/main/java/com/movie/booking/system/services/impl/BookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/movie/booking/system/services/impl/BookingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/src/main/java/com/movie/booking/system/handlers/BookingAPIHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/movie/booking/system/handlers/BookingAPIHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/commons/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commons/src/main/java/com/ticket/booking/system/commons/dto/BookingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons/src/main/java/com/ticket/booking/system/commons/dto/BookingDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/payment-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/movie/ticket/booking/system/payment/service/serviceslayer/StripeApiPaymentGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/movie/ticket/booking/system/payment/service/serviceslayer/StripeApiPaymentGateway.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/movie/ticket/booking/system/payment/service/serviceslayer/impl/PaymentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/movie/ticket/booking/system/payment/service/serviceslayer/impl/PaymentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -56,17 +50,24 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="36f9g1smOb9OnGZez7opPi0a0LN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.MoviebookingsystemApplication.executor": "Run",
     "Maven.booking-service [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
     "Maven.booking-service [org.apache.maven.plugins:maven-clean-plugin:3.2.0:help].executor": "Run",
     "Maven.booking-system [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
@@ -79,10 +80,23 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.runner"
+    "settings.editor.selected.configurable": "project.propCompiler"
   }
 }]]></component>
   <component name="RunManager">
+    <configuration name="MoviebookingsystemApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.movie.booking.system.MoviebookingsystemApplication" />
+      <module name="booking-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.movie.booking.system.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="ticket-booking-system" />
       <method v="2">
@@ -94,6 +108,11 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MoviebookingsystemApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
