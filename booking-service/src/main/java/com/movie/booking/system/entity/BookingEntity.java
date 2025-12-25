@@ -1,6 +1,6 @@
 package com.movie.booking.system.entity;
 
-import com.ticket.booking.system.commons.dto.BookingStatus;
+import com.ticket.booking.system.commons.status.BookingStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

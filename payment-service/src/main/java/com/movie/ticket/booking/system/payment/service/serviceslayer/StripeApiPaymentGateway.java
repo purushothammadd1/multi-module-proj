@@ -4,7 +4,7 @@ import com.stripe.Stripe;
 import com.stripe.exception.StripeException;
 import com.stripe.model.Charge;
 import com.ticket.booking.system.commons.dto.BookingDTO;
-import com.ticket.booking.system.commons.dto.BookingStatus;
+import com.ticket.booking.system.commons.status.BookingStatus;
 import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;

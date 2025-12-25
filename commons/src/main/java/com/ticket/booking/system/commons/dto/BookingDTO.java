@@ -1,5 +1,6 @@
 package com.ticket.booking.system.commons.dto;
 
+import com.ticket.booking.system.commons.status.BookingStatus;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;

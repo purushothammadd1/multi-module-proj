@@ -5,7 +5,7 @@ import com.movie.booking.system.entity.BookingEntity;
 import com.movie.booking.system.repositories.BookingRepository;
 import com.movie.booking.system.services.BookingService;
 import com.ticket.booking.system.commons.dto.BookingDTO;
-import com.ticket.booking.system.commons.dto.BookingStatus;
+import com.ticket.booking.system.commons.status.BookingStatus;
 import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +29,7 @@ public class BookingServiceImpl implements BookingService {
         		.userId(bookingDTO.getUserId())
         		.movieId(bookingDTO.getMovieId())
                 .bookingAmount(bookingDTO.getBookingAmount())
-                .bookingStatus( BookingStatus.PENDING)
+                .bookingStatus(BookingStatus.PENDING)
                 .showDate(bookingDTO.getShowDate())
                 .showTime(bookingDTO.getShowTime())
                 .seatsSelected(bookingDTO.getSeatsSelected())

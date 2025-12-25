@@ -5,12 +5,14 @@ spring:
   application:
     name: payment-service
   datasource:
-    url: jdbc:mysql://localhost:3306/payments?createDatabaseIfNotExist=true
+    url: jdbc:mysql://paymentdb:3306/payments?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimeZone=UTC
     username: root
-    password: 4724
+    password: payments
+    hikari:
+      initialization-fail-timeout: 0
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     show-sql: true
 
 stripe:
